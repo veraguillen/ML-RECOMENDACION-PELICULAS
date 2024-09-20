@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 def cargar_data1():
-    ruta = (r"C:\Users\veram\OneDrive\Escritorio\API\datos parquet\datadia_mes_df1.parquet")
+    ruta = r"C:\\Users\\veram\\OneDrive\\Escritorio\\API\\datos parquet\\datadia_mes_df1.parquet"
     if os.path.exists(ruta):
         try:
             data_mes_dia = pd.read_parquet(ruta)
@@ -16,7 +16,7 @@ def cargar_data1():
 
 
 def cargar_data2():
-    ruta = (r"C:\Users\veram\OneDrive\Escritorio\API\datos parquet\data_creditos_df3.parquet")
+    ruta = r"C:\\Users\\veram\\OneDrive\\Escritorio\\API\\datos parquet\\'data_creditos_df3.parquet"
     if os.path.exists(ruta):
         try:
             data_creditos = pd.read_parquet(ruta)
@@ -30,7 +30,7 @@ def cargar_data2():
 
 
 def cargar_data3():
-    ruta = (r"C:\Users\veram\OneDrive\Escritorio\API\datos parquet\data_votos_df2.parquet")
+    ruta = r"C:\\Users\\veram\\OneDrive\\Escritorio\\API\\datos parquet\\data_votos_df2.parquet"
     if os.path.exists(ruta):
         try:
             data_votos = pd.read_parquet(ruta)
@@ -44,7 +44,7 @@ def cargar_data3():
 
 
 def cargar_data4():
-    ruta = (r"C:\Users\veram\OneDrive\Escritorio\API\datos parquet\data_machine_df4.parquet")
+    ruta = r"C:\\Users\\veram\\OneDrive\\Escritorio\\API\\datos parquet\\data_machine_df4.parquet"
     if os.path.exists(ruta):
         try:
             data_machine = pd.read_parquet(ruta)
