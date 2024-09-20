@@ -1,0 +1,9 @@
+# Entorno virtual
+enetorno/
+enetorno/
+.enetorno/
+
+# Archivos temporales
+*.log
+*.tmp
+__pycache__/
