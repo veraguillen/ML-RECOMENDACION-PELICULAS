@@ -1,24 +1,16 @@
 from fastapi import FastAPI, HTTPException, Query
 from pydantic import BaseModel
 # Importar funciones y modelos necesarios
-from utils.funciones import (
-    cantidad_filmaciones_dia, 
-    cantidad_filmaciones_mes, 
-    score_titulo, 
-    votos_titulo, 
-    get_actor, 
-    get_director, 
-    get_recommendations
-)
-from utils.carga_data import (
-    cargar_data1, 
-    cargar_data2, 
-    cargar_data3, 
-    cargar_data4
-)
+from utils.funciones import cantidad_filmaciones_dia, cantidad_filmaciones_mes, score_titulo, votos_titulo, get_actor, get_director, get_recommendations
+from utils.carga_data import cargar_data1, cargar_data2, cargar_data3, cargar_data4
 from typing import List
 
 app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello, World!"}
+            
 
 # Cargar los datasets
 data_mes_dia = cargar_data1()
